@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&family=Tenor+Sans&display=swap");
+/* SEE PROPERTY/VALUE PAIRS BELOW: */
+/* font-family: "Tenor Sans", sans-serif; */
+/* font-family: "Paytone One", sans-serif; */
+body {
+	font-family: "Paytone One", sans-serif;
+	background-color: #ffe2be;
+    padding: 5rem;
+}
+h1 {
+	color: #f122ff;
+	text-align: center;
+}
+label {
+	font-family: "Tenor Sans", sans-serif;
+	font-size: 20px;
+	color: #fcfdfe;
+	padding: 1rem;
+}
+form {
+	background-color: #0393b3;
+	width: 75%;
+	justify-content: center;
+	border-radius: 10px;
+	margin-left: 12.5%;
+	margin-bottom: 10%;
+	padding-top: 1rem;
+}
+legend {
+	font-family: "Tenor Sans", sans-serif;
+	font-size: 20px;
+	color: #fcfdfe;
+	padding: 1rem;
+}
+
+button {
+	padding: 0.5rem;
+	font-size: 20px;
+}
