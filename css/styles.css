@@ -5,35 +5,113 @@
 body {
 	font-family: "Paytone One", sans-serif;
 	background-color: #ffe2be;
-    padding: 5rem;
+	/* 	text-align: center; */
 }
+
 h1 {
 	color: #f122ff;
 	text-align: center;
+	/* 	border: 2px blue solid; */
+}
+.required {
+	color: white;
+	font-size: 0.75rem;
+	text-align: right;
+	font-family: "Tenor Sans", sans-serif;
 }
 label {
 	font-family: "Tenor Sans", sans-serif;
 	font-size: 20px;
 	color: #fcfdfe;
-	padding: 1rem;
 }
+
 form {
+	/* 	font-family: "Paytone One", sans-serif; */
 	background-color: #0393b3;
 	width: 75%;
 	justify-content: center;
 	border-radius: 10px;
 	margin-left: 12.5%;
 	margin-bottom: 10%;
-	padding-top: 1rem;
-}
-legend {
-	font-family: "Tenor Sans", sans-serif;
-	font-size: 20px;
-	color: #fcfdfe;
-	padding: 1rem;
+	padding-top: 0.5rem;
 }
 
-button {
+.form-data {
+	margin: 1rem;
+}
+
+.input-wrapper {
+	display: flex;
+	flex-direction: column;
 	padding: 0.5rem;
+}
+
+.input-wrapper input {
+	border-radius: 5px;
+	height: 30px;
+}
+
+.choose-flavor {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+	align-content: center;
+}
+.choose-flavor select {
+	border-radius: 5px;
+	height: 35px;
+}
+fieldset {
+	border: none;
+	font-family: "Tenor Sans", sans-serif;
+	color: white;
+}
+.service-option {
+	display: flex;
+	flex-direction: column;
+
+	/* 	justify-content: center; */
+}
+.service-option div {
+	margin: 0;
+}
+
+.optional {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+}
+.optional div {
+	margin: 0;
+}
+
+#submit {
+	border-radius: 10px;
+	margin: 1rem;
+	padding: 1rem;
 	font-size: 20px;
+	color: #0393b3;
+}
+.button-wrapper {
+	display: flex;
+	justify-content: center;
+}
+#submit:hover {
+	background-color: #f122ff;
+	color: black;
+	cursor: pointer;
+}
+
+@media (min-width: 751px) {
+	.input-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	.input-wrapper input {
+		border-radius: 5px;
+		height: 25px;
+		min-width: 85%;
+	}
 }

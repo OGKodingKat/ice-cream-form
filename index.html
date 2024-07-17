@@ -3,69 +3,67 @@
 <head>
 	<title> Form Introduction</title>
 	<meta charset="UTF-8">
-    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 	<h1>Fill out the form to place your ice cream order!</h1>
-	<div class="page-wrapper">
-		<form id="form">
-			<div class="form-date">
-				<div class="form1">
-					<label for="inputName">Name</label>
-					<input type="text" name="inputName" class="namea" id="inputName" placeholder="Name" required>
+	<form action="" method="get" id="form">
+		<div class="form-data">
+			<div class="customer-info">
+				<p class="required">*required</p>
+				<div class="input-wrapper">
+					<label for="name">Name*</label>
+					<input type="text" id="name" name="name" required>
 				</div>
-
-				<div class="form2">
-					<label for="inputEmail1" required="required">Email address</label>
-					<input type="text" name="inputEmail1" class="emaila" id="inputEmail1" placeholder="Enter email">
+				<div class="input-wrapper">
+					<label for="email">Email*</label>
+					<input type="email" id="email" name="email" required>
 				</div>
-
-				<div class="form3">
-					<label for="inputPhoneNumber" required="required">Phone Number</label>
-					<input type="tel" name="inputPhoneNumber" class="numba" id="inputPhoneNumber" placeholder="Enter phone number">
+				<div class="input-wrapper">
+					<label for="phone">Phone*</label>
+					<input type="tel" id="phone" name="phone" placeholder="123-123-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
 				</div>
-
-				<div class="form4">
-					<label for="dropdownSelector">Choose a Flavor:</label>
-					<br>
-					<select class="flava" id="dropdownSelector" name="platform" required="required">
-						<option value="options" disabled selected hidden>--Please choose an option--</option>
-						<option>strawberry</option>
-						<option>vanilla</option>
-						<option>chocolate</option>
-					</select>
-				</div>
-				<label>Choose One:</label>
-				<br>
-				<input type="radio" id="cone" name="cupOrCone" value="Cone">
-				<label for="cone">Cone</label><br>
-				<input type="radio" id="cup" name="cupOrCone" value="Cup">
-				<label for="cup">Cup</label>
-				<br>
-
-				<fieldset>
-					<legend>Choose your toppings:</legend>
-
-					<div>
-						<input type="checkbox" id="sprinkles" name="sprinkles" />
-						<label for="sprinkles">Sprinkles</label>
-					</div>
-
-					<div>
-						<input type="checkbox" id="fruit" name="fruit" />
-						<label for="fruit">Fruit</label>
-					</div>
-					<div>
-						<input type="checkbox" id="chocolate" name="chocolate" />
-						<label for="chocolate">Chocolate</label>
-					</div>
-				</fieldset>
-				<button type="submit" class="btn btn-primary">Place Order</button>
 			</div>
-		</form>
-	</div>
-	<script src="js/custom.js"></script>
+			<div class="choose-flavor">
+				<label for="flavor">Ice cream Flavor</label>
+				<select id="flavor" name="choose_flav" required>
+					<option value="choose_option" disabled selected hidden>Please choose an option</option>
+					<option value="vanilla">Vanilla</option>
+					<option value="chocolate">Chocolate </option>
+					<option value="strawberry">Strawberry</option>
+				</select>
+			</div>
+			<fieldset class="service-option">
+				<legend>Cup or cone?</legend>
+				<div class="select_cone">
+					<input type="radio" id="cone" value="cone" name="service_choice">
+					<label for="cone" class="service">Cone</label>
+				</div>
+				<div class="select_cup">
+					<input type="radio" id="cup" value="cup" name="service_choice">
+					<label for="cup" class="service">Cup</label>
+			</fieldset>
+		</div>
+		<fieldset class="optional">
+			<legend> What Toppings would you like?</legend>
+			<div class="add_sprinkle">
+				<input type="checkbox" id="sprinkles" value="want_sprinkles" name="add-sprinkles">
+				<label class="light" for="sprinkles">Sprinkles</label>
+			</div>
+			<div class="add_fruit">
+				<input type="checkbox" id="fruit" value="want_fruit" name="add-fruit">
+				<label class="light" for="fruit">Fruit</label>
+			</div>
+			<div class="add_chocolate">
+				<input type="checkbox" id="chocolate" value="want_chocolate" name="add-chocolate">
+				<label class="light" for="chocolate">Chocolate</label>
+			</div>
+		</fieldset>
+		<div class="button-wrapper">
+			<input type="submit" id="submit" value="Place Order">
+		</div>
+	</form>
+	<script src="js/node.js"></script>
 </body>
 
 </html>

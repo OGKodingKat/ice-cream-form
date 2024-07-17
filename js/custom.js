@@ -11,6 +11,6 @@ function onFormSubmit(event) {
 	//above is boiler plate code
 	userArray.push(dataObject);
 	console.log(userArray);
+	console.log(dataObject);
 	form.reset();
 }
-console.log(userArray);
